@@ -121,6 +121,6 @@ Hands-on Lab: 60 minutes
 - :white_circle: Palmer to validate Gitlab instance per pod
 - :white_circle: Palmer to validate HTTP proxy for web access into pod
 - :white_check_mark: Quinn to validate Postman (Free) allows for requests and code extraction via lightweight HTTP client
-- :white_circle: Kareem to send over presentation for Git to Palmer
+- :white_check_mark: Kareem to send over presentation for Git to Palmer
 - :white_circle: Quinn to append tree of folder structure to this outline
-- :white_circle: Kareem to create recurring meeting
+- :white_check_mark: Kareem to create recurring meeting
