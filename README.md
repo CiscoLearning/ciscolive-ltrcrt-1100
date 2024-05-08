@@ -3,7 +3,7 @@
 ## A Hands-On Preparation for the DevNet Associate Exam
 
 <p align="center">
-<a href="./01-Intro-APIs/1.md"><img src="./assets/button.png" width="300px"></a>
+<a href="./01-Intro-APIs/1.md"><img src="./assets/start.png" width="300px"></a>
 </p>
 
 ![line](./assets/banner.png)
