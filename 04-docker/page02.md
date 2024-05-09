@@ -1,1 +1,0 @@
-# Exploring Containers and the Docker Runtime
