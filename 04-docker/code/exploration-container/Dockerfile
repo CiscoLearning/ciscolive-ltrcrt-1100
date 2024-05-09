@@ -3,9 +3,9 @@ MAINTAINER Quinn Snyder <qsnyder@cisco.com>
 
 COPY requirements.txt . 
 
-ENV info "DNE-BASE v3.7.6: Python 3.7.6, Ansible 2.9.5, Openconnect, VIRLUtils"
+ENV info "DNE-BASE v3.8.19: Python 3.8.19, Ansible-Core 2.13.13, Openconnect, VIRLUtils"
 
-RUN echo 'PS1="\[\e[36m\]\u\[\e[m\]\[\e[37m\]@\[\e[m\]\[\e[32m\]dnebase376\[\e[m\]:\[\e[33m\]\w\[\e[m\]\[\e[33m\]\\$\[\e[m\] "' >> /root/.bashrc 
+RUN echo 'PS1="\[\e[36m\]\u\[\e[m\]\[\e[37m\]@\[\e[m\]\[\e[32m\]dnebase3819\[\e[m\]:\[\e[33m\]\w\[\e[m\]\[\e[33m\]\\$\[\e[m\] "' >> /root/.bashrc 
 
 RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing/" >> /etc/apk/repositories && \
     apk update && \
