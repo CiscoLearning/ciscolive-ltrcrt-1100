@@ -5,11 +5,15 @@ from rich import print as pprint
 
 JOKE_API_BASE_URL="https://api.chucknorris.io/jokes"
 WEBEX_BASE_API="https://webexapis.com/v1/"
-ROOM_ID = os.getenv("WEBEX_ROOM")
-TOKEN = os.getenv("WEBEX_TOKEN")
+
+# E - Fill in the required environment variables based on the
+# names from the Dockerfile
+ROOM_ID = os.getenv("")
+TOKEN = os.getenv("")
 
 def get_chuck_joke():
-  url = JOKE_API_BASE_URL+"/random"
+  # F - append a path to the BASE_URL to grab a random joke
+  url = JOKE_API_BASE_URL+"/"
 
   headers = {
   'Content-Type': 'application/json',
@@ -34,7 +38,8 @@ def post_to_webex(message):
     "Authorization": f"Bearer {TOKEN}"
   }
 
-  response = requests.request("POST", url, headers=HEADERS, data=payload)
+  # G - complete the request to post the message to the Webex room
+  response = requests.request()
 
   return(response)
 

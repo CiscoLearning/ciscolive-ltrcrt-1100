@@ -2,12 +2,16 @@ FROM python:3.9.19-bullseye
 
 WORKDIR /root/
 
-COPY requirements.txt ./
-COPY testing.py ./
+#A -  Copy over the code and any pre-requisite files to make the code work
+COPY 
+COPY 
 
-RUN pip install --no-cache-dir -r requirements.txt
+# B - Ensure that the package requirements are installed (complete the command)
+RUN pip install --no-cache-dir 
 
-ENV WEBEX_TOKEN=MDAzMDU5MDMtODE1Ni00MjUxLTkwYmMtYjc5NGUxMmIzNjhiNWUzNDI0OTEtZjll_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f
-ENV WEBEX_ROOM=Y2lzY29zcGFyazovL3VzL1JPT00vYmQ1ZjhiODAtOWFjZS0xMWVlLWE2OGEtYWQzYWE4ZTg0MzAz
+# C- Add in appropriate values here for room and token
+ENV WEBEX_TOKEN=
+ENV WEBEX_ROOM=
 
-CMD [ "python", "./joke-and-post.py" ]
+# D - Complete the command to run the function
+CMD [ "python",  ]
