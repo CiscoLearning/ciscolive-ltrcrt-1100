@@ -1,0 +1,33 @@
+
+| AP Serial     | POD Number |
+|---------------|------------|
+ QBSC-JKHG-ZAMJ| POD 1      
+ QBSC-U4J5-Q27Q	 | POD 2      
+ QBSC-ENHR-9C79	 | POD 3      
+ QBSC-SBC5-4E39	 | POD 4      
+ QBSC-VH5N-YLNW	 | POD 5      
+ QBSC-R7ZQ-CFMP	 | POD 6      
+ QBSC-SNLA-5QJM	 | POD 7      
+ QBSC-RQLY-N485	 | POD 8      
+ QBSC-UL4C-8VFU	 | POD 9      
+ QBSC-5JU9-3945	 | POD 10     
+ QBSC-LLLM-NL4L	 | POD 11     
+ QBSC-KAM4-DAP3	 | POD 12     
+ QBSC-2MQP-TR25	 | POD 13     
+ QBSC-XGYC-SVHY	 | POD 14     
+ QBSC-JQQA-UYSN	 | POD 15     
+ QBSC-GAXD-8VNY	 | POD 16     
+ QBSC-3MMU-7YTP	 | POD 17     
+ QBSC-H5ZF-NM6P	 | POD 18     
+ QBSC-249X-RMC9	 | POD 19     
+ QBSC-GWBZ-RV3T	 | POD 20     
+ QBSC-435S-RCGW	 | POD 21     
+ QBSC-8ZXX-522F	 | POD 22     
+ QBSC-5KMW-QDDE	 | POD 23     
+ QBSC-7BZJ-CYKV	 | POD 24     
+ QBSC-WZ76-ALHC	 | POD 25     
+ QBSC-Y23G-E7RX	 | POD 26     
+ QBSC-AJSG-Z7W2	 | POD 27     
+ QBSC-ARYV-A3T9	 | POD 28     
+ QBSC-LSGU-Z7JW	 | POD 29     
+ QBSC-PN52-6WMN	 | POD 30     
