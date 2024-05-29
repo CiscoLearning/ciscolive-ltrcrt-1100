@@ -167,6 +167,29 @@ nothing to commit, working tree clean
 
 8. Open your pod GitLab instance web interface, using the lab workstation's browser. Ensure you are in the **main** branch of the **learning-git** project. Note that **branch_file.txt** is now present in the **main** branch: ![New file in the main branch](./images/task-10-step-08-merged.png)
 
+## Task 11: Delete a Branch
+
+1. In the Visual Studio Code terminal, use the **git branch** command with the **-d** option to delete the **dev** branch:
+
+```shell
+git branch -d dev
+```
+
+2. Use the **git push** command with the **--delete** option to delete the remote **dev** branch:
+
+```shell
+git push origin --delete dev
+```
+
+Your output should be similar to the following:
+
+```text
+To http://gitlab/developer/learning-git.git
+ - [deleted]         dev
+```
+
+3. Use your local workstation's browser to confirm that only the **main** branch is present in your GitLab project: ![Deleted remote branch](./images/task-11-step-02-delete_remote_branch.png)
+
 
 ![line](../assets/banner.png)
 
@@ -177,6 +200,7 @@ Before continuing to the next task, you should have completed the following:
 * [x] **Returned to the `main` branch and merged `dev` into `main`.**
 * [x] **Pushed the merge commit to the remote GitLab repository.**
 * [x] **Verified the new file in the `dev` branch is present in the remote GitLab repository.**
+* [x] **Deleted the `dev` branch from the local and remote repositories after successfully merging and pushing the changes.**
 
 **What happens when a teammate commits and merges changes to the same before you do? Continue to the next set of tasks to learn how to handle *merge conflicts***
 
