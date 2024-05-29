@@ -178,6 +178,40 @@ ls
 new_file.txt
 ```
 
+4. Use the **git log** command to view that the new commit is present in the log. Notice that the most recent commit is at the *top* of the log:
+
+```shell
+git log --oneline
+```
+
+```text
+db0d07a (HEAD -> main) Remove README and add a new file
+bf1ab78 (origin/main, origin/HEAD) Initial commit
+```
+
+5. Copy the first seven (7) characters of the FIRST commit ID to the clipboard. In the example above, the string **bf1ab78** will be copied.
+6. Use the **git diff** command with the copied commit ID to view changes between the initial commit and the current version fo the repository:
+
+```shell
+git diff bf1ab78
+```
+
+You will be presented with a full listing of changes between the initial commit and the current branch. Press **SPACE** to continue one page at a time, or **q** to quit the diff viewer. Notice the following:
+- The diff indicates the file **README.md** changes between the initial commit and the current commit; it has been deleted.
+
+```text
+diff --git a/README.md b/README.md
+deleted file mode 100644
+```
+
+- The file **new_file.txt** was created:
+
+```text
+diff --git a/new_file.txt b/new_file.txt
+new file mode 100644
+```
+
+
 ![line](../assets/banner.png)
 
 Before continuing to the next task, you should have completed the following:

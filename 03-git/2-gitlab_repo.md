@@ -101,6 +101,32 @@ Your branch is up to date with 'origin/main'.
 nothing to commit, working tree clean
 ```
 
+7. Use the **git log** command to view that there is a single commit present in the Git log. The initial commit was created when you created the repository with a README:
+
+```shell
+git log
+```
+
+Your output should be similar to the following:
+
+```text
+commit bf1ab782b9d04ba478e580b2625a1ec465e2f165 (HEAD -> main, origin/main, origin/HEAD)
+Author: Developer <developer@local.lab>
+Date:   Wed May 29 13:43:22 2024 +0000
+
+    Initial commit
+```
+
+8. Use **git log** again, this time adding the **--oneline** parameter. Notice how the output contains less detail, but is still easy to read:
+
+```shell
+git log --oneline
+```
+
+```text
+bf1ab78 (HEAD -> main, origin/main, origin/HEAD) Initial commit
+```
+
 ![line](../assets/banner.png)
 
 Before continuing to the next task, you should have completed the following:

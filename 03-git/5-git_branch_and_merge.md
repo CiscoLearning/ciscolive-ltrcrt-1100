@@ -114,7 +114,25 @@ Your output should match the following:
 * main
 ```
 
-4. Use the **git merge** command to merge the **dev** branch into the **main** branch. When you merge branches, you must be working in the branch that is the **target** of the merge. In this task, you are merging changes from the **dev** branch into the **main** branch:
+4. Use the **git diff** command and specify the name of the branch to compare to the **main** branch:
+
+```shell
+git diff dev
+```
+
+Your output should be similar to the following. Notice that you can see the new file **branch_file.txt** was created in the **dev** branch:
+
+```text
+diff --git a/branch_file.txt b/branch_file.txt
+deleted file mode 100644
+index f9e8b0d..0000000
+--- a/branch_file.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-This is my team contribution!
+```
+
+5. Use the **git merge** command to merge the **dev** branch into the **main** branch. When you merge branches, you must be working in the branch that is the **target** of the merge. In this task, you are merging changes from the **dev** branch into the **main** branch:
 
 ```shell
 git merge dev
@@ -130,7 +148,7 @@ Fast-forward
  create mode 100644 branch_file.txt
 ```
 
-5. Use **git status** to check the status of your repository. Your output should match the following:
+6. Use **git status** to check the status of your repository. Your output should match the following:
 
 ```text
 On branch main
@@ -142,7 +160,21 @@ nothing to commit, working tree clean
 
 *Note: When you merge branches in Git, a new commit is created with the details of the merge. Your local repository will now be one commit ahead of the origin.*
 
-6. Push the changes to the remote repository.
+7. Use the **git log** command to view that the merge is now present in the log for the **main** branch:
+
+```shell
+git log --oneline
+```
+
+Your output should be similar to the following:
+
+```text
+5dfac60 (HEAD -> main, origin/dev, dev) Added a new file in this branch.
+c6e5104 Remove README and add a new file
+bf1ab78 (origin/main, origin/HEAD) Initial commit
+```
+
+8. Push the changes to the remote repository.
 
 ```shell
 git push origin main
@@ -156,7 +188,7 @@ To http://gitlab/developer/learning-git.git
    1b96901..d87d10b  main -> main
 ```
 
-7. Use **git status** to verify the local branch is up to date with the **main** branch at the remote repository.
+9. Use **git status** to verify the local branch is up to date with the **main** branch at the remote repository.
 
 ```text
 On branch main
@@ -165,7 +197,7 @@ Your branch is up to date with 'origin/main'.
 nothing to commit, working tree clean
 ```
 
-8. Open your pod GitLab instance web interface, using the lab workstation's browser. Ensure you are in the **main** branch of the **learning-git** project. Note that **branch_file.txt** is now present in the **main** branch: ![New file in the main branch](./images/task-10-step-08-merged.png)
+10. Open your pod GitLab instance web interface, using the lab workstation's browser. Ensure you are in the **main** branch of the **learning-git** project. Note that **branch_file.txt** is now present in the **main** branch: ![New file in the main branch](./images/task-10-step-08-merged.png)
 
 ## Task 11: Delete a Branch
 
