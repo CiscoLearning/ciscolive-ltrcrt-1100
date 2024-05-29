@@ -45,9 +45,7 @@ Select `Connect to Host...`.
 </td></tr>
 <tr><td>4.</td><td>
     
-Fill in the connection details to your Pod's Developer VM: `auto@pod<xx>-xelab.cisco.com` where `<xx>` should be replaced with a two digit number of your pod. For example Pod 50 would be `auto@pod50-xelab.cisco.com`.
-
-> **Note**: If your pod number a single digit (`1-9`), add a zero in front. For example, Pod `1` will be `01`.
+Fill in the connection details to your Pod's Developer VM: `auto@pod<xx>-xelab.cisco.com` where `<xx>` should be replaced with the number of your pod. For example Pod 50 would be `auto@pod50-xelab.cisco.com`.
 
 > **Note**: If you are prompted to select the platform of the remote host, click `Linux`.
 
