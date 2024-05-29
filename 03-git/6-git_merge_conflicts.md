@@ -185,7 +185,7 @@ Before continuing to the next task, you should have completed the following:
 * [x] **Resolved the conflict and committed the updated file to the repository.**
 * [x] **Pushed your changes to the remote repository.**
 
-**Congratulations! You have gained proficiency using the Git version control system. Continue to the next lab to learn about container development.
+**Congratulations! You have gained proficiency using the Git version control system. Continue to the next lab to learn about container development.**
 
 ![line](../assets/banner.png)
 
