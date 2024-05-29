@@ -103,5 +103,5 @@ Before continuing to the next step, you should have completed the following:
 ![line](../assets/banner.png)
 <p align="center">
 <a href="../README.md"><img src="../assets/previous.png" width="150px"></a>
-<a href="../01-Intro-APIs/1.md"><img src="../assets/next.png" width="150px"></a>
+<a href="../01-intro-apis/1.md"><img src="../assets/next.png" width="150px"></a>
 </p>
