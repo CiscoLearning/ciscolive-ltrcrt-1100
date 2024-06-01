@@ -29,7 +29,7 @@ url = "https://api.meraki.com/api/v1/organizations/646829496481091262/networks"
 
 payload = {}
 headers = {
-  'Authorization': 'Bearer 865f9754864292ccfe17354d4caf35db8ac5563c'
+  'Authorization': 'Bearer e9e0f062f587b423bb6cc6328eb786d75b45783e'
 }
 
 response = requests.request("GET", url, headers=headers, data=payload)

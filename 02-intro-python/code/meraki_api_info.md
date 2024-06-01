@@ -5,7 +5,7 @@ Add the following keys:
 
 | Variable name | Initial Value                                |
 |---------------|----------------------------------------------|
-| `apiKey` | `865f9754864292ccfe17354d4caf35db8ac5563c`   |
+| `apiKey` | `e9e0f062f587b423bb6cc6328eb786d75b45783e`   |
 | `baseUrl` | `https://api.meraki.com/api/v1`              |
 | `organizationId` | `646829496481091262`                         |
 | `networkId` | `L_646829496481117067`                       |

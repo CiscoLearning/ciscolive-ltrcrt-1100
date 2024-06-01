@@ -26,7 +26,7 @@ import requests
 import time
 
 baseurl = "https://api.meraki.com/api/v1"
-headers = {'Authorization': 'Bearer 865f9754864292ccfe17354d4caf35db8ac5563c'}
+headers = {'Authorization': 'Bearer e9e0f062f587b423bb6cc6328eb786d75b45783e'}
 org_id = "646829496481091262"
 
 
