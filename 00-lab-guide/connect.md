@@ -72,7 +72,17 @@ After Visual Studio Code has copied necessary files for the remote session, the 
 > **Note**: If the terminal view does not show up automatically, you can open it from the top menu of Visual Studio Code application: `Terminal` > `New terminal`
 </td><td>
 
+
 ![Overview](./images/05-vscode-terminal.png)
+
+</td></tr>
+<tr><td>8.</td><td>
+
+The final step is to clone this repository to be able to use the source code.  Use the following command to perform a clone
+
+```bash
+git clone https://github.com/CiscoLearning/ciscolive-ltrcrt-1100.git
+```
 
 </td></tr>
 </table>
