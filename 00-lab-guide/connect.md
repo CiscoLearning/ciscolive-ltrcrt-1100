@@ -78,11 +78,23 @@ After Visual Studio Code has copied necessary files for the remote session, the 
 </td></tr>
 <tr><td>8.</td><td>
 
-The final step is to clone this repository to be able to use the source code.  Use the following command to perform a clone
+The next step is to clone this repository to be able to use the source code.  Use the following command to perform a clone in the terminal of VSCode
 
 ```bash
 git clone https://github.com/CiscoLearning/ciscolive-ltrcrt-1100.git
 ```
+
+</td></tr>
+<tr><td>9.</td><td>
+
+The final step is to click **Open Folder** in the left hand pane and select the newly cloned folder and click **OK**.  This will open up the folder structure in the left hand pane of VSCode.
+
+</td></tr>
+
+</td><td>
+
+
+![Overview](./images/09-vscode-remote.png)
 
 </td></tr>
 </table>
