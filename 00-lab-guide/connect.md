@@ -85,11 +85,10 @@ git clone https://github.com/CiscoLearning/ciscolive-ltrcrt-1100.git
 ```
 
 </td></tr>
+
 <tr><td>9.</td><td>
 
 The final step is to click **Open Folder** in the left hand pane and select the newly cloned folder and click **OK**.  This will open up the folder structure in the left hand pane of VSCode.
-
-</td></tr>
 
 </td><td>
 
@@ -97,6 +96,7 @@ The final step is to click **Open Folder** in the left hand pane and select the 
 ![Overview](./images/09-vscode-remote.png)
 
 </td></tr>
+
 </table>
 
 
