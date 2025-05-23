@@ -26,7 +26,7 @@ import requests
 from prettytable import PrettyTable
 
 baseurl = "https://api.meraki.com/api/v1"
-headers = {'Authorization': 'Bearer e9e0f062f587b423bb6cc6328eb786d75b45783e'}
+headers = {'Authorization': 'Bearer {{API_KEY}}'} # Step 0 - Add your API key here
 orgid = "" # Step 1 - Identify the OrgId and add it here
 neworkid = "" # Step 2 - Identify the networkId and add it here
 

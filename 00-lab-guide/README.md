@@ -2,6 +2,7 @@
 # LTRCRT-1100 Lab guide
 ![line](../assets/banner.png)
 
+![img](../assets/image.png)
 ## Content of the lab
 
 ### 0. Connect to the lab environment
