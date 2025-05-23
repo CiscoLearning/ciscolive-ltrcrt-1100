@@ -25,11 +25,11 @@ SOFTWARE.
 
 import requests
 
-url = "https://api.meraki.com/api/v1/organizations/646829496481091262/networks"
+url = "https://api.meraki.com/api/v1/organizations/1689296/networks"
 
 payload = {}
 headers = {
-  'Authorization': 'Bearer e9e0f062f587b423bb6cc6328eb786d75b45783e'
+  'Authorization': 'Bearer 3ffbb71abf7288f721c9389c6833a4614f339921'
 }
 
 response = requests.request("GET", url, headers=headers, data=payload)

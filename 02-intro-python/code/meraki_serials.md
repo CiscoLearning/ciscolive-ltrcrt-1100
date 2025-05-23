@@ -1,7 +1,7 @@
 
 | AP Serial     | POD Number |
 |---------------|------------|
- QBSC-JKHG-ZAMJ| POD 1      
+ QBSC-JKHG-ZAMJ  | POD 1      
  QBSC-U4J5-Q27Q	 | POD 2      
  QBSC-ENHR-9C79	 | POD 3      
  QBSC-SBC5-4E39	 | POD 4      

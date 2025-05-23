@@ -26,8 +26,8 @@ import requests
 import time
 
 baseurl = "https://api.meraki.com/api/v1"
-headers = {'Authorization': 'Bearer e9e0f062f587b423bb6cc6328eb786d75b45783e'}
-org_id = "646829496481091262"
+headers = {'Authorization': 'Bearer 3ffbb71abf7288f721c9389c6833a4614f339921'}
+org_id = "1689296"
 
 
 def create_network():
@@ -70,16 +70,19 @@ def configure_ap(serial):
     url = f"{baseurl}/devices/{serial}"
     payload = {
         "name": "Iskander-AP",
-        "tags": [" recently-added "],
-        "address": "1600 Pennsylvania Ave, DC",
+        "tags": ["recently-added"],
+        "address": "500 Terry A Francois Blvd, San Francisco, CA 94158",
         "notes": "This AP will be used for isolated guest wifi",
         "moveMapMarker": True
     }
     response = requests.put(url, headers=headers, json=payload)
     print(f"Status Code: {response.status_code} - {response.reason}")
     print(response.json())
-    # Pass the network_id to the configure_ssid function
-    configure_ssid(response.json()['networkId'])
+    # Pass the network_id to the configure_ssid function if device config is successful
+    if response.status_code == 200:
+        configure_ssid(response.json()['networkId'])
+    else:
+        print("Skipping SSID config due to device config failure.")
 
 
 def configure_ssid(network_id):

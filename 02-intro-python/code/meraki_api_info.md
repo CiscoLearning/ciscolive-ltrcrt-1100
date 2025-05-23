@@ -5,10 +5,10 @@ Add the following keys:
 
 | Variable name | Initial Value                                |
 |---------------|----------------------------------------------|
-| `apiKey` | `e9e0f062f587b423bb6cc6328eb786d75b45783e`   |
+| `apiKey` | `3ffbb71abf7288f721c9389c6833a4614f339921`   |
 | `baseUrl` | `https://api.meraki.com/api/v1`              |
-| `organizationId` | `646829496481091262`                         |
-| `networkId` | `L_646829496481117067`                       |
+| `organizationId` | `1689296`                         |
+| `networkId` | `L_618681998810025423`                       |
 | `serial` |                                              |
 
 Click **Save**.

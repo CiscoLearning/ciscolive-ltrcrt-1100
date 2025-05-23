@@ -61,12 +61,23 @@ def claim_devices(network_id):
 
 def configure_ap(serial):
     # TODO: Complete the function to configure the AP and pass the network_id to the configure_ssid function
-    # Pass the network_id to the configure_ssid function
-    configure_ssid(response.json()['networkId'])
+    #
+    #
+
+    # Pass the network_id to the configure_ssid function if device config is successful
+    if response.status_code == 200:
+        configure_ssid(response.json()['networkId'])
+    else:
+        print("Skipping SSID config due to device config failure.")
 
 
 def configure_ssid(network_id):
     # TODO: Complete the function to configure the SSID and print the success message
+    #
+    #
+
+    print(f"Status Code: {response.status_code} - {response.reason}")
+    print(response.json())
     print("Network created successfully!!! Challenge complete! 🎉🎉🎉")
 
 
