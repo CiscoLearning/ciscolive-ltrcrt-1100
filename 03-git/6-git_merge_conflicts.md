@@ -168,7 +168,7 @@ nothing to commit, working tree clean
 commit 474ee3c5b3aab358e438fcb57fb86087a80ea126 (HEAD -> main, origin/main, origin/HEAD)
 Merge: 937e6f3 e6201fd
 Author: Palmer Sample <psample@cisco.com>
-Date:   Wed May 29 06:31:54 2024 -0700
+Date:   Wed May 29 06:31:54
 
     Resolved the merge conflict
 ```

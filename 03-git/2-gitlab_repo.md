@@ -112,7 +112,7 @@ Your output should be similar to the following:
 ```text
 commit bf1ab782b9d04ba478e580b2625a1ec465e2f165 (HEAD -> main, origin/main, origin/HEAD)
 Author: Developer <developer@local.lab>
-Date:   Wed May 29 13:43:22 2024 +0000
+Date:   Wed May 29 13:43:22
 
     Initial commit
 ```
