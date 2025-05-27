@@ -16,6 +16,98 @@
       "items": [
         {
           "type": "folder",
+          "name": "Chuck Norris",
+          "filename": "Chuck Norris",
+          "seq": 1,
+          "root": {
+            "meta": {
+              "name": "Chuck Norris",
+              "seq": 1
+            }
+          },
+          "items": [
+            {
+              "type": "http",
+              "name": "GET - Joke Categories - Task 3|2",
+              "filename": "GET - Joke Categories - Task 3-2.bru",
+              "seq": 2,
+              "request": {
+                "url": "",
+                "method": "GET",
+                "headers": [],
+                "params": [],
+                "body": {
+                  "mode": "none",
+                  "formUrlEncoded": [],
+                  "multipartForm": [],
+                  "file": []
+                },
+                "script": {},
+                "vars": {},
+                "assertions": [],
+                "tests": "",
+                "docs": "",
+                "auth": {
+                  "mode": "inherit"
+                }
+              }
+            },
+            {
+              "type": "http",
+              "name": "GET - Joke Query Params - Task 3|3",
+              "filename": "GET - Joke Query Params - Task 3-3.bru",
+              "seq": 3,
+              "request": {
+                "url": "",
+                "method": "GET",
+                "headers": [],
+                "params": [],
+                "body": {
+                  "mode": "none",
+                  "formUrlEncoded": [],
+                  "multipartForm": [],
+                  "file": []
+                },
+                "script": {},
+                "vars": {},
+                "assertions": [],
+                "tests": "",
+                "docs": "",
+                "auth": {
+                  "mode": "inherit"
+                }
+              }
+            },
+            {
+              "type": "http",
+              "name": "GET - Random Joke - Task 2",
+              "filename": "GET - Random Joke - Task 2.bru",
+              "seq": 1,
+              "request": {
+                "url": "",
+                "method": "GET",
+                "headers": [],
+                "params": [],
+                "body": {
+                  "mode": "none",
+                  "formUrlEncoded": [],
+                  "multipartForm": [],
+                  "file": []
+                },
+                "script": {},
+                "vars": {},
+                "assertions": [],
+                "tests": "",
+                "docs": "",
+                "auth": {
+                  "mode": "inherit"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "folder",
           "name": "Challenge (Open only if Needed)",
           "filename": "Challenge (Open only if Needed)",
           "seq": 1,
@@ -207,98 +299,6 @@
         },
         {
           "type": "folder",
-          "name": "Chuck Norris",
-          "filename": "Chuck Norris",
-          "seq": 1,
-          "root": {
-            "meta": {
-              "name": "Chuck Norris",
-              "seq": 1
-            }
-          },
-          "items": [
-            {
-              "type": "http",
-              "name": "GET - Joke Categories - Task 3|2",
-              "filename": "GET - Joke Categories - Task 3-2.bru",
-              "seq": 2,
-              "request": {
-                "url": "",
-                "method": "GET",
-                "headers": [],
-                "params": [],
-                "body": {
-                  "mode": "none",
-                  "formUrlEncoded": [],
-                  "multipartForm": [],
-                  "file": []
-                },
-                "script": {},
-                "vars": {},
-                "assertions": [],
-                "tests": "",
-                "docs": "",
-                "auth": {
-                  "mode": "inherit"
-                }
-              }
-            },
-            {
-              "type": "http",
-              "name": "GET - Joke Query Params - Task 3|3",
-              "filename": "GET - Joke Query Params - Task 3-3.bru",
-              "seq": 3,
-              "request": {
-                "url": "",
-                "method": "GET",
-                "headers": [],
-                "params": [],
-                "body": {
-                  "mode": "none",
-                  "formUrlEncoded": [],
-                  "multipartForm": [],
-                  "file": []
-                },
-                "script": {},
-                "vars": {},
-                "assertions": [],
-                "tests": "",
-                "docs": "",
-                "auth": {
-                  "mode": "inherit"
-                }
-              }
-            },
-            {
-              "type": "http",
-              "name": "GET - Random Joke - Task 2",
-              "filename": "GET - Random Joke - Task 2.bru",
-              "seq": 1,
-              "request": {
-                "url": "",
-                "method": "GET",
-                "headers": [],
-                "params": [],
-                "body": {
-                  "mode": "none",
-                  "formUrlEncoded": [],
-                  "multipartForm": [],
-                  "file": []
-                },
-                "script": {},
-                "vars": {},
-                "assertions": [],
-                "tests": "",
-                "docs": "",
-                "auth": {
-                  "mode": "inherit"
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "folder",
           "name": "Webex",
           "filename": "Webex",
           "seq": 1,
@@ -311,11 +311,11 @@
           "items": [
             {
               "type": "http",
-              "name": "POST - Join Webex Room",
-              "filename": "POST - Join Webex Room.bru",
+              "name": "POST - Join Webex Room | Task 4",
+              "filename": "POST - Join Webex Room - Task 4.bru",
               "seq": 2,
               "request": {
-                "url": "https://webexapis.com/v1/memberships",
+                "url": "https://webexapis.com/v1/memberships/",
                 "method": "POST",
                 "headers": [
                   {
@@ -332,7 +332,7 @@
                 "params": [],
                 "body": {
                   "mode": "json",
-                  "json": "{\n    \"roomId\": \"{{webex_room}}\",\n    \"personId\": \"{{personal_token}}\",\n    \"personEmail\": \"john.andersen@example.com\",\n    \"isModerator\": true\n}",
+                  "json": "{\n    \"roomId\": \"{{webex_room}}\",\n    \"personEmail\": \"<EMAIL ADDRESS HERE>\",\n    \"isModerator\": false\n} ",
                   "formUrlEncoded": [],
                   "multipartForm": [],
                   "file": []
@@ -352,8 +352,8 @@
             },
             {
               "type": "http",
-              "name": "POST - Send Message to Space",
-              "filename": "POST - Send Message to Space.bru",
+              "name": "POST - Send Message to Space | Task 5",
+              "filename": "POST - Send Message to Space - Task 5.bru",
               "seq": 1,
               "request": {
                 "url": "https://webexapis.com/v1/messages",
@@ -450,7 +450,7 @@
       ]
     }
   ],
-  "activeEnvironmentUid": "VedAkmCNbmOZ3jpRqFN4A",
+  "activeEnvironmentUid": "xcPj7MMrgZdMMsUKHfd2t",
   "environments": [
     {
       "variables": [
