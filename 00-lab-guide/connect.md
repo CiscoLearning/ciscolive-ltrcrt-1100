@@ -1,4 +1,5 @@
 # 0. Connect to the lab environment
+
 ![line](../assets/banner.png)
 
 In this lab, each participant receives their own Pod. Each pod includes a Linux development host and a GitLab instance.
@@ -44,7 +45,7 @@ Select `Connect to Host...`.
 
 </td></tr>
 <tr><td>4.</td><td>
-    
+
 Fill in the connection details to your Pod's Developer VM: `auto@pod<xx>-xelab.cisco.com` where `<xx>` should be replaced with the number of your pod. For example Pod 50 would be `auto@pod50-xelab.cisco.com`.
 
 > **Note**: If you are prompted to select the platform of the remote host, click `Linux`.
@@ -63,7 +64,6 @@ If prompted to verify the Fingerprint, click `Continue`.
 
 Fill in the password that the instructor has provided you.
 
-
 </td></tr>
 <tr><td>7.</td><td>
 
@@ -71,7 +71,6 @@ After Visual Studio Code has copied necessary files for the remote session, the 
 
 > **Note**: If the terminal view does not show up automatically, you can open it from the top menu of Visual Studio Code application: `Terminal` > `New terminal`
 </td><td>
-
 
 ![Overview](./images/05-vscode-terminal.png)
 
@@ -88,23 +87,32 @@ git clone https://github.com/CiscoLearning/ciscolive-ltrcrt-1100.git
 
 <tr><td>9.</td><td>
 
-The final step is to click **Open Folder** in the left hand pane and select the newly cloned folder and click **OK**.  This will open up the folder structure in the left hand pane of VSCode.
+Next, you'll need to click **Open Folder** in the left hand pane and select the newly cloned folder and click **OK**.  This will open up the folder structure in the left hand pane of VSCode.
 
 </td><td>
-
 
 ![Overview](./images/09-vscode-remote.png)
 
 </td></tr>
 
-</table>
+<tr><td>10.</td><td>
 
+Finally, in order to use the Bruno collection for the first section, you'll need to download the collection from the remote host to your local machine.  Find `LTRCRT1100 Collections.json` under `ciscolive-ltrcrt-1100/01-intro-apis/bruno collection` and right click on it and select **Download**.  This will bring up a prompt to select the location to download the collection to your local machine.  Remember where you downloaded it to, as you'll need to import it into Bruno in the next task.
+
+</td><td>
+
+![Overview](./images/10-collection-download.png)
+
+</td></tr>
+
+</table>
 
 ## Visual Studio Code tips
 
 Throughout this lab, you will work in the Visual Studio Code terminal using the SSH extension that you set up in this preparation task.
 
 - You can open a file from Visual Studio Code's terminal with the command `code`.
+
     ```bash
     code filename.py
     ```
@@ -117,8 +125,7 @@ You can open multiple Visual Studio code terminals. This might be useful when yo
 
 Before continuing to the next task, you should have completed the following:
 
-* [x] **Connected to your pod using Visual Studio Code remote SSH extension**
-
+- [x] **Connected to your pod using Visual Studio Code remote SSH extension**
 
 ![line](../assets/banner.png)
 <p align="center">
