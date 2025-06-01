@@ -46,9 +46,11 @@ Select `Connect to Host...`.
 </td></tr>
 <tr><td>4.</td><td>
 
-Fill in the connection details to your Pod's Developer VM: `auto@pod<xx>-xelab.cisco.com` where `<xx>` should be replaced with the number of your pod. For example Pod 50 would be `auto@pod50-xelab.cisco.com`.
+Fill in the connection details to your Pod's Developer VM: `auto@pod<xx>-xelab.cisco.com:443` where `<xx>` should be replaced with the number of your pod. For example Pod 50 would be `auto@pod50-xelab.cisco.com:443`.
 
 > **Note**: If you are prompted to select the platform of the remote host, click `Linux`.
+
+> **Note**: SSH is accessible on port 443. Ensure you include the port number in the connection string.
 
 </td><td>
 
