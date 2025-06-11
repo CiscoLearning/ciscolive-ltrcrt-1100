@@ -1,0 +1,461 @@
+{
+  "info": {
+    "name": "LTRCRT1100 Collections",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "01 - APIs",
+      "item": [
+        {
+          "name": "Chuck Norris",
+          "item": [
+            {
+              "name": "GET - Joke Categories - Task 3|2",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [],
+                "auth": {
+                  "type": "noauth"
+                },
+                "description": "",
+                "url": {
+                  "raw": "",
+                  "protocol": "",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "GET - Joke Query Params - Task 3|3",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [],
+                "auth": {
+                  "type": "noauth"
+                },
+                "description": "",
+                "url": {
+                  "raw": "",
+                  "protocol": "",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "GET - Random Joke - Task 2",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [],
+                "auth": {
+                  "type": "noauth"
+                },
+                "description": "",
+                "url": {
+                  "raw": "",
+                  "protocol": "",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "Webex",
+          "item": [
+            {
+              "name": "POST - Join Webex Room | Task 4",
+              "event": [],
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "disabled": false,
+                    "type": "default"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "disabled": false,
+                    "type": "default"
+                  }
+                ],
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "key": "token",
+                    "value": "{{bot_token}}",
+                    "type": "string"
+                  }
+                },
+                "description": "",
+                "url": {
+                  "raw": "https://webexapis.com/v1/memberships/",
+                  "protocol": "https",
+                  "host": [
+                    "webexapis",
+                    "com"
+                  ],
+                  "path": [
+                    "v1",
+                    "memberships",
+                    ""
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"roomId\": \"{{webex_room}}\",\n    \"personEmail\": \"<EMAIL ADDRESS HERE>\",\n    \"isModerator\": false\n} ",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "name": "POST - Send Message to Space | Task 5",
+              "event": [],
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "disabled": false,
+                    "type": "default"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "disabled": false,
+                    "type": "default"
+                  }
+                ],
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "key": "token",
+                    "value": "{{personal_token}}",
+                    "type": "string"
+                  }
+                },
+                "description": "",
+                "url": {
+                  "raw": "https://webexapis.com/v1/messages",
+                  "protocol": "https",
+                  "host": [
+                    "webexapis",
+                    "com"
+                  ],
+                  "path": [
+                    "v1",
+                    "messages"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"roomId\": \"{{webex_room}}\",\n    \"text\": \"<ADD NEW TEXT HERE>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "Challenge (Open only if Needed)",
+          "item": [
+            {
+              "name": "GET - Find Room ID",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "disabled": false,
+                    "type": "default"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "disabled": false,
+                    "type": "default"
+                  }
+                ],
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "key": "token",
+                    "value": "{{personal_token}}",
+                    "type": "string"
+                  }
+                },
+                "description": "",
+                "url": {
+                  "raw": "https://webexapis.com/v1/rooms?sortBy=lastactivity",
+                  "protocol": "https",
+                  "host": [
+                    "webexapis",
+                    "com"
+                  ],
+                  "path": [
+                    "v1",
+                    "rooms"
+                  ],
+                  "query": [
+                    {
+                      "key": "sortBy",
+                      "value": "lastactivity"
+                    }
+                  ],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "GET - List Room Members",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "disabled": false,
+                    "type": "default"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "disabled": false,
+                    "type": "default"
+                  }
+                ],
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "key": "token",
+                    "value": "{{personal_token}}",
+                    "type": "string"
+                  }
+                },
+                "description": "",
+                "url": {
+                  "raw": "https://webexapis.com/v1/memberships?roomId={{webex_room}}",
+                  "protocol": "https",
+                  "host": [
+                    "webexapis",
+                    "com"
+                  ],
+                  "path": [
+                    "v1",
+                    "memberships"
+                  ],
+                  "query": [
+                    {
+                      "key": "roomId",
+                      "value": "{{webex_room}}"
+                    }
+                  ],
+                  "variable": []
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "name": "POST - Create Room",
+              "event": [],
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "disabled": false,
+                    "type": "default"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "disabled": false,
+                    "type": "default"
+                  }
+                ],
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "key": "token",
+                    "value": "{{personal_token}}",
+                    "type": "string"
+                  }
+                },
+                "description": "",
+                "url": {
+                  "raw": "https://webexapis.com/v1/rooms",
+                  "protocol": "https",
+                  "host": [
+                    "webexapis",
+                    "com"
+                  ],
+                  "path": [
+                    "v1",
+                    "rooms"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"title\": \"LTRCRT1100-<your name>\",\n  \"description\": \"Lab challenge room\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "name": "POST - Send Message to Space",
+              "event": [],
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "disabled": false,
+                    "type": "default"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "disabled": false,
+                    "type": "default"
+                  }
+                ],
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "key": "token",
+                    "value": "{{personal_token}}",
+                    "type": "string"
+                  }
+                },
+                "description": "",
+                "url": {
+                  "raw": "https://webexapis.com/v1/messages",
+                  "protocol": "https",
+                  "host": [
+                    "webexapis",
+                    "com"
+                  ],
+                  "path": [
+                    "v1",
+                    "messages"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"roomId\": \"{{your_room}}\",\n    \"markdown\": \"<ADD NEW TEXT HERE>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "02 - Intro Python",
+      "item": [
+        {
+          "name": "Meraki",
+          "item": [
+            {
+              "name": "Get Neworks",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [],
+                "auth": {
+                  "type": "noauth"
+                },
+                "description": "",
+                "url": {
+                  "raw": "",
+                  "protocol": "",
+                  "host": [],
+                  "path": [],
+                  "query": [],
+                  "variable": []
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "bot_token",
+      "value": "",
+      "type": "default"
+    },
+    {
+      "key": "webex_room",
+      "value": "",
+      "type": "default"
+    },
+    {
+      "key": "personal_token",
+      "value": "",
+      "type": "default"
+    },
+    {
+      "key": "your_room",
+      "value": "",
+      "type": "default"
+    }
+  ]
+}
