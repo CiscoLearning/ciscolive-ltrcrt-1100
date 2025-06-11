@@ -1,0 +1,510 @@
+{
+  "name": "LTRCRT1100 Collections",
+  "version": "1",
+  "items": [
+    {
+      "type": "folder",
+      "name": "01 - APIs",
+      "filename": "01 - APIs",
+      "seq": 1,
+      "root": {
+        "meta": {
+          "name": "01 - APIs",
+          "seq": 1
+        }
+      },
+      "items": [
+        {
+          "type": "folder",
+          "name": "Chuck Norris",
+          "filename": "Chuck Norris",
+          "seq": 1,
+          "root": {
+            "meta": {
+              "name": "Chuck Norris",
+              "seq": 1
+            }
+          },
+          "items": [
+            {
+              "type": "http",
+              "name": "GET - Joke Categories - Task 3|2",
+              "filename": "GET - Joke Categories - Task 3-2.bru",
+              "seq": 2,
+              "request": {
+                "url": "",
+                "method": "GET",
+                "headers": [],
+                "params": [],
+                "body": {
+                  "mode": "none",
+                  "formUrlEncoded": [],
+                  "multipartForm": [],
+                  "file": []
+                },
+                "script": {},
+                "vars": {},
+                "assertions": [],
+                "tests": "",
+                "docs": "",
+                "auth": {
+                  "mode": "inherit"
+                }
+              }
+            },
+            {
+              "type": "http",
+              "name": "GET - Joke Query Params - Task 3|3",
+              "filename": "GET - Joke Query Params - Task 3-3.bru",
+              "seq": 3,
+              "request": {
+                "url": "",
+                "method": "GET",
+                "headers": [],
+                "params": [],
+                "body": {
+                  "mode": "none",
+                  "formUrlEncoded": [],
+                  "multipartForm": [],
+                  "file": []
+                },
+                "script": {},
+                "vars": {},
+                "assertions": [],
+                "tests": "",
+                "docs": "",
+                "auth": {
+                  "mode": "inherit"
+                }
+              }
+            },
+            {
+              "type": "http",
+              "name": "GET - Random Joke - Task 2",
+              "filename": "GET - Random Joke - Task 2.bru",
+              "seq": 1,
+              "request": {
+                "url": "",
+                "method": "GET",
+                "headers": [],
+                "params": [],
+                "body": {
+                  "mode": "none",
+                  "formUrlEncoded": [],
+                  "multipartForm": [],
+                  "file": []
+                },
+                "script": {},
+                "vars": {},
+                "assertions": [],
+                "tests": "",
+                "docs": "",
+                "auth": {
+                  "mode": "inherit"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "folder",
+          "name": "Webex",
+          "filename": "Webex",
+          "seq": 1,
+          "root": {
+            "meta": {
+              "name": "Webex",
+              "seq": 1
+            }
+          },
+          "items": [
+            {
+              "type": "http",
+              "name": "POST - Join Webex Room | Task 4",
+              "filename": "POST - Join Webex Room - Task 4.bru",
+              "seq": 2,
+              "request": {
+                "url": "https://webexapis.com/v1/memberships/",
+                "method": "POST",
+                "headers": [
+                  {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "enabled": true
+                  },
+                  {
+                    "name": "Accept",
+                    "value": "application/json",
+                    "enabled": true
+                  }
+                ],
+                "params": [],
+                "body": {
+                  "mode": "json",
+                  "json": "{\n    \"roomId\": \"{{webex_room}}\",\n    \"personEmail\": \"<EMAIL ADDRESS HERE>\",\n    \"isModerator\": false\n} ",
+                  "formUrlEncoded": [],
+                  "multipartForm": [],
+                  "file": []
+                },
+                "script": {},
+                "vars": {},
+                "assertions": [],
+                "tests": "",
+                "docs": "",
+                "auth": {
+                  "mode": "bearer",
+                  "bearer": {
+                    "token": "{{bot_token}}"
+                  }
+                }
+              }
+            },
+            {
+              "type": "http",
+              "name": "POST - Send Message to Space | Task 5",
+              "filename": "POST - Send Message to Space - Task 5.bru",
+              "seq": 1,
+              "request": {
+                "url": "https://webexapis.com/v1/messages",
+                "method": "POST",
+                "headers": [
+                  {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "enabled": true
+                  },
+                  {
+                    "name": "Accept",
+                    "value": "application/json",
+                    "enabled": true
+                  }
+                ],
+                "params": [],
+                "body": {
+                  "mode": "json",
+                  "json": "{\n    \"roomId\": \"{{webex_room}}\",\n    \"text\": \"<ADD NEW TEXT HERE>\"\n}",
+                  "formUrlEncoded": [],
+                  "multipartForm": [],
+                  "file": []
+                },
+                "script": {},
+                "vars": {},
+                "assertions": [],
+                "tests": "",
+                "docs": "",
+                "auth": {
+                  "mode": "bearer",
+                  "bearer": {
+                    "token": "{{personal_token}}"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "folder",
+          "name": "Challenge (Open only if Needed)",
+          "filename": "Challenge (Open only if Needed)",
+          "seq": 1,
+          "root": {
+            "meta": {
+              "name": "Challenge (Open only if Needed)",
+              "seq": 1
+            }
+          },
+          "items": [
+            {
+              "type": "http",
+              "name": "GET - Find Room ID",
+              "filename": "GET - Find Room ID.bru",
+              "seq": 3,
+              "request": {
+                "url": "https://webexapis.com/v1/rooms?sortBy=lastactivity",
+                "method": "GET",
+                "headers": [
+                  {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "enabled": true
+                  },
+                  {
+                    "name": "Accept",
+                    "value": "application/json",
+                    "enabled": true
+                  }
+                ],
+                "params": [
+                  {
+                    "name": "sortBy",
+                    "value": "lastactivity",
+                    "type": "query",
+                    "enabled": true
+                  }
+                ],
+                "body": {
+                  "mode": "none",
+                  "formUrlEncoded": [],
+                  "multipartForm": [],
+                  "file": []
+                },
+                "script": {},
+                "vars": {},
+                "assertions": [],
+                "tests": "",
+                "docs": "",
+                "auth": {
+                  "mode": "bearer",
+                  "bearer": {
+                    "token": "{{personal_token}}"
+                  }
+                }
+              }
+            },
+            {
+              "type": "http",
+              "name": "GET - List Room Members",
+              "filename": "GET - List Room Members.bru",
+              "seq": 2,
+              "request": {
+                "url": "https://webexapis.com/v1/memberships?roomId={{webex_room}}",
+                "method": "GET",
+                "headers": [
+                  {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "enabled": true
+                  },
+                  {
+                    "name": "Accept",
+                    "value": "application/json",
+                    "enabled": true
+                  }
+                ],
+                "params": [
+                  {
+                    "name": "roomId",
+                    "value": "{{webex_room}}",
+                    "type": "query",
+                    "enabled": true
+                  }
+                ],
+                "body": {
+                  "mode": "json",
+                  "json": "",
+                  "formUrlEncoded": [],
+                  "multipartForm": [],
+                  "file": []
+                },
+                "script": {},
+                "vars": {},
+                "assertions": [],
+                "tests": "",
+                "docs": "",
+                "auth": {
+                  "mode": "bearer",
+                  "bearer": {
+                    "token": "{{personal_token}}"
+                  }
+                }
+              }
+            },
+            {
+              "type": "http",
+              "name": "POST - Create Room",
+              "filename": "POST - Create Room.bru",
+              "seq": 1,
+              "request": {
+                "url": "https://webexapis.com/v1/rooms",
+                "method": "POST",
+                "headers": [
+                  {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "enabled": true
+                  },
+                  {
+                    "name": "Accept",
+                    "value": "application/json",
+                    "enabled": true
+                  }
+                ],
+                "params": [],
+                "body": {
+                  "mode": "json",
+                  "json": "{\n  \"title\": \"LTRCRT1100-<your name>\",\n  \"description\": \"Lab challenge room\"\n}",
+                  "formUrlEncoded": [],
+                  "multipartForm": [],
+                  "file": []
+                },
+                "script": {},
+                "vars": {},
+                "assertions": [],
+                "tests": "",
+                "docs": "",
+                "auth": {
+                  "mode": "bearer",
+                  "bearer": {
+                    "token": "{{personal_token}}"
+                  }
+                }
+              }
+            },
+            {
+              "type": "http",
+              "name": "POST - Send Message to Space",
+              "filename": "POST - Send Message to Space.bru",
+              "seq": 4,
+              "request": {
+                "url": "https://webexapis.com/v1/messages",
+                "method": "POST",
+                "headers": [
+                  {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "enabled": true
+                  },
+                  {
+                    "name": "Accept",
+                    "value": "application/json",
+                    "enabled": true
+                  }
+                ],
+                "params": [],
+                "body": {
+                  "mode": "json",
+                  "json": "{\n    \"roomId\": \"{{your_room}}\",\n    \"markdown\": \"<ADD NEW TEXT HERE>\"\n}",
+                  "formUrlEncoded": [],
+                  "multipartForm": [],
+                  "file": []
+                },
+                "script": {},
+                "vars": {},
+                "assertions": [],
+                "tests": "",
+                "docs": "",
+                "auth": {
+                  "mode": "bearer",
+                  "bearer": {
+                    "token": "{{personal_token}}"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "02 - Intro Python",
+      "filename": "02 - Intro Python",
+      "seq": 2,
+      "root": {
+        "meta": {
+          "name": "02 - Intro Python",
+          "seq": 2
+        }
+      },
+      "items": [
+        {
+          "type": "folder",
+          "name": "Meraki",
+          "filename": "Meraki",
+          "seq": 1,
+          "root": {
+            "meta": {
+              "name": "Meraki",
+              "seq": 1
+            }
+          },
+          "items": [
+            {
+              "type": "http",
+              "name": "Get Neworks",
+              "filename": "Get Neworks.bru",
+              "seq": 1,
+              "request": {
+                "url": "",
+                "method": "GET",
+                "headers": [],
+                "params": [],
+                "body": {
+                  "mode": "none",
+                  "formUrlEncoded": [],
+                  "multipartForm": [],
+                  "file": []
+                },
+                "script": {},
+                "vars": {},
+                "assertions": [],
+                "tests": "",
+                "docs": "",
+                "auth": {
+                  "mode": "inherit"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "activeEnvironmentUid": "z1zDiXhuHLkdW2TvlAn1R",
+  "environments": [
+    {
+      "variables": [
+        {
+          "name": "bot_token",
+          "value": "YThmNzg2OWQtMzdhZi00NWU1LThkOTktOGQ1MDVkZDI4ZmJiNzViNjkyOTAtMjMx_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f",
+          "enabled": true,
+          "secret": false,
+          "type": "text"
+        },
+        {
+          "name": "webex_room",
+          "value": "Y2lzY29zcGFyazovL3VzL1JPT00vZmUyZmNkMjAtMjA5Yi0xMWVmLThlMDctZTU1YmQxZTRlMzYx",
+          "enabled": true,
+          "secret": false,
+          "type": "text"
+        },
+        {
+          "name": "personal_token",
+          "value": "",
+          "enabled": true,
+          "secret": false,
+          "type": "text"
+        },
+        {
+          "name": "your_room",
+          "value": "",
+          "enabled": true,
+          "secret": false,
+          "type": "text"
+        }
+      ],
+      "name": "LTRCRT1100"
+    }
+  ],
+  "root": {
+    "request": {
+      "auth": {
+        "mode": "none"
+      }
+    },
+    "meta": {
+      "name": "LTRCRT1100 Collections"
+    }
+  },
+  "brunoConfig": {
+    "version": "1",
+    "name": "LTRCRT1100 Collections",
+    "type": "collection",
+    "ignore": [
+      "node_modules",
+      ".git"
+    ],
+    "size": 0.002986907958984375,
+    "filesCount": 18
+  }
+}
